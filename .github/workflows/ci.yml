@@ -34,4 +34,4 @@ jobs:
             BUILD_IMAGE=erlang:${{matrix.erlang}}
             RUST_VERSION=${{matrix.rust}}
           push: true
-          tags: ghcr.io/shortishly/erlang-rust:${{matrix.erlang}}.${{matrix.rust}}
+          tags: ghcr.io/shortishly/erlang-rust:${{matrix.erlang}}-${{matrix.rust}}
